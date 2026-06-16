@@ -6,6 +6,7 @@ import './globals.css';
 import Header from '@/components/layout/header';
 import { Providers } from '@/lib/providers';
 import Footer from '@/components/layout/footer';
+import { withBasePath } from '@/lib/site-config';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -50,9 +51,9 @@ export const metadata: Metadata = {
     images: '/images/betul-about.png',
   },
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
+    icon: withBasePath('/favicon.ico'),
+    shortcut: withBasePath('/favicon-16x16.png'),
+    apple: withBasePath('/apple-touch-icon.png'),
   },
 };
 
