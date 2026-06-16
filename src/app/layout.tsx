@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     siteName: title,
     images: [
       {
-        url: '/images/open-graph-sagar.png',
+        url: '/images/betul-about.png',
       },
     ],
   },
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     title,
     description,
     creator: '@betulcagril',
-    images: '/images/open-graph-sagar.png',
+    images: '/images/betul-about.png',
   },
   icons: {
     icon: '/favicon.ico',
