@@ -39,9 +39,16 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Deployment
 
-This project is configured for **GitHub Pages** via GitHub Actions. Pushing to the `main` branch triggers an automatic build and deploy.
+This project deploys to GitHub Pages automatically on every push to `main`.
 
-In repository settings, set **Pages → Source** to **GitHub Actions**.
+**Important:** In repository **Settings → Pages**, set:
+
+- **Source:** Deploy from a branch
+- **Branch:** `gh-pages` / `(root)`
+
+Then open: **https://betulcagril.github.io/betulcagril-portfolio/**
+
+Do **not** use the `main` branch as the Pages source — that shows the README, not the website.
 
 ## Contact
 
