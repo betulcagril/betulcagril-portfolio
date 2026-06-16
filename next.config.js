@@ -1,12 +1,12 @@
 /** @type {import('next').NextConfig} */
 const repo = 'betulcagril-portfolio';
-const isGithubPages = process.env.GITHUB_PAGES === 'true';
-const basePath = isGithubPages ? `/${repo}` : '';
+const basePath =
+  process.env.NODE_ENV === 'production' ? `/${repo}` : '';
 
 const nextConfig = {
   output: 'export',
   basePath,
-  assetPrefix: isGithubPages ? `${basePath}/` : undefined,
+  trailingSlash: true,
   images: {
     unoptimized: true,
   },

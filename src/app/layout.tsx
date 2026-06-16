@@ -12,10 +12,7 @@ const inter = Inter({ subsets: ['latin'] });
 const title = 'Betül Çağril portfolio';
 const description =
   'Computer Engineering student portfolio — AI, full-stack development, computer vision, and software projects by Betül Çağril.';
-const isGithubPages = process.env.GITHUB_PAGES === 'true';
-const url = isGithubPages
-  ? 'https://betulcagril.github.io/betulcagril-portfolio'
-  : 'https://betulcagril.dev';
+const url = 'https://betulcagril.github.io/betulcagril-portfolio';
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),
