@@ -1,5 +1,9 @@
 # Betül Çağril Portfolio
 
+> **Live site:** https://betulcagril.github.io/betulcagril-portfolio/
+>
+> If you only see this README page, open the link above — that is the actual portfolio.
+
 Personal portfolio website showcasing my projects, experience, and skills as a Computer Engineering student focused on AI, full-stack development, and computer vision.
 
 **Live site:** [betulcagril.github.io/betulcagril-portfolio](https://betulcagril.github.io/betulcagril-portfolio)
