@@ -19,12 +19,6 @@ import IconButton from '@/components/general/icon-button';
 import DownloadCV from '@/components/general/download-cv';
 import Typography from '@/components/general/typography';
 
-const Logo = () => (
-  <Typography variant="h3" className="font-bold">
-    {'<SS />'}
-  </Typography>
-);
-
 const Header = () => {
   const scrolled = useScroll(40);
   const [isOpen, setIsOpen] = useState(false);
@@ -44,10 +38,7 @@ const Header = () => {
         scrolled ? 'bg-gray/50 backdrop-blur-xl md:border-gray-100' : ''
       )}
     >
-      <div className="mx-auto flex w-full max-w-7xl items-center justify-between p-4 md:px-8">
-        <Link href="/" noCustomization>
-          <Logo />
-        </Link>
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-end px-4 py-2.5 md:px-8">
         <div className="hidden items-center gap-6 md:flex">
           <ul className="flex list-none items-center gap-6">
             {NAV_LINKS.map((link, index) => (
@@ -70,8 +61,7 @@ const Header = () => {
             </IconButton>
           </DrawerTrigger>
           <DrawerContent>
-            <div className="flex items-center justify-between border-b border-gray-100 p-4">
-              <Logo />
+            <div className="flex items-center justify-end border-b border-gray-100 p-4">
               <DrawerClose asChild>
                 <IconButton>
                   <X />

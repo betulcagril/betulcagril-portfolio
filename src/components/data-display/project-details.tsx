@@ -1,12 +1,11 @@
-import Image from 'next/image';
 import { ExternalLink } from 'lucide-react';
 
 import { ProjectDetails as ProjectDetailsType } from '@/lib/types';
 import { mergeClasses } from '@/lib/utils';
 import Typography from '@/components/general/typography';
 import Link from '@/components/navigation/link';
-import Tag from '@/components/data-display/tag';
 import Card from '@/components/layout/card';
+import ImageLightbox from '@/components/data-display/image-lightbox';
 
 type ProjectDetailsProps = ProjectDetailsType & {
   layoutType: 'default' | 'reverse';
@@ -14,57 +13,61 @@ type ProjectDetailsProps = ProjectDetailsType & {
 
 const ProjectDetails = ({
   name,
-  description,
-  technologies,
+  summary,
+  previewImages,
   url,
-  previewImage,
   layoutType = 'default',
 }: ProjectDetailsProps) => {
   return (
-    <Card className="mx-auto flex w-full max-w-6xl flex-col md:flex-row">
-      {/* Image */}
+    <Card className="mx-auto flex w-full max-w-7xl flex-col md:flex-row">
       <div
         className={mergeClasses(
-          'flex items-center justify-center border-gray-100 bg-gray-50 p-8 dark:bg-gray-200 max-md:rounded-t-xl md:w-1/2 lg:p-12',
+          'flex flex-col gap-4 border-gray-100 bg-gray-50 p-6 dark:bg-gray-200 max-md:rounded-t-xl md:w-1/2 lg:p-8',
           layoutType === 'default'
             ? 'md:rounded-l-xl md:border-r'
             : 'md:order-last md:rounded-r-xl md:border-l'
         )}
       >
-        <Link noCustomization href={url} externalLink>
-          <Image
-            src={previewImage}
-            alt={`${name} preview`}
-            className="rounded-xl shadow-lg transition-transform duration-500 md:hover:scale-105"
-            style={{ objectFit: 'cover' }}
+        {previewImages?.map((image, index) => (
+          <ImageLightbox
+            key={index}
+            src={image}
+            alt={`${name} preview ${index + 1}`}
           />
-        </Link>
+        ))}
       </div>
 
-      {/* Content */}
       <div
         className={mergeClasses(
-          'flex flex-col gap-6 p-8 md:w-1/2 lg:p-12',
+          'flex flex-col gap-4 p-6 md:w-1/2 lg:p-8',
           layoutType === 'default' ? '' : 'md:order-first'
         )}
       >
-        <Typography variant="subtitle" className="font-semibold text-gray-900">
-          {name}
-        </Typography>
-        <Typography>{description}</Typography>
-        <div className="flex flex-wrap gap-2">
-          {technologies?.map((technology, index) => (
-            <Tag key={index} label={technology} />
-          ))}
+        <div className="flex flex-col gap-2">
+          <Typography variant="subtitle" className="font-semibold text-gray-900">
+            {name}
+          </Typography>
+          {url && (
+            <Link
+              href={url}
+              externalLink
+              noCustomization
+              className="inline-flex w-fit items-center gap-1.5 text-sm font-medium text-gray-500 transition-colors hover:text-gray-900"
+            >
+              <span>
+                {url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')}
+              </span>
+              <ExternalLink className="h-3.5 w-3.5 shrink-0 opacity-70" />
+            </Link>
+          )}
         </div>
-        <Link
-          href={url}
-          noCustomization
-          className="self-start rounded-lg p-1.5 hover:bg-gray-50 [&_svg]:stroke-gray-500"
-          externalLink
-        >
-          <ExternalLink />
-        </Link>
+        <ul className="flex list-disc flex-col gap-2 md:gap-1">
+          {summary?.map((sentence, index) => (
+            <Typography component="li" key={index}>
+              {sentence}
+            </Typography>
+          ))}
+        </ul>
       </div>
     </Card>
   );

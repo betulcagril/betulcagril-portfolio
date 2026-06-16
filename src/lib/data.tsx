@@ -1,44 +1,43 @@
-import { Github, Twitter, Figma } from 'lucide-react';
+import { Github, Linkedin, Instagram } from 'lucide-react';
 
 import LogoJavascript from '/public/images/logos/icon-javascript.svg';
 import LogoTypescript from '/public/images/logos/icon-typescript.svg';
 import LogoReact from '/public/images/logos/icon-react.svg';
 import LogoNextjs from '/public/images/logos/icon-nextjs.svg';
 import LogoNodejs from '/public/images/logos/icon-nodejs.svg';
-import LogoExpress from '/public/images/logos/icon-express.svg';
-import LogoExpressLight from '/public/images/logos/icon-express-light.svg';
-import LogoNest from '/public/images/logos/icon-nest.svg';
-import LogoSocket from '/public/images/logos/icon-socket.svg';
-import LogoSocketLight from '/public/images/logos/icon-socket-light.svg';
 import LogoPostgreSQL from '/public/images/logos/icon-postgresql.svg';
-import LogoMongoDB from '/public/images/logos/icon-mongodb.svg';
-import LogoSass from '/public/images/logos/icon-sass.svg';
 import LogoTailwindcss from '/public/images/logos/icon-tailwindcss.svg';
-import LogoFigma from '/public/images/logos/icon-figma.svg';
-import LogoCypress from '/public/images/logos/icon-cypress.svg';
-import LogoCypressLight from '/public/images/logos/icon-cypress-light.svg';
-import LogoStorybook from '/public/images/logos/icon-storybook.svg';
 import LogoGit from '/public/images/logos/icon-git.svg';
+import LogoGo from '/public/images/logos/icon-go.svg';
+import LogoPython from '/public/images/logos/icon-python.svg';
+import LogoYolov8 from '/public/images/logos/icon-yolov8.svg';
+import LogoYolov8Light from '/public/images/logos/icon-yolov8-light.svg';
+import LogoPaddleocr from '/public/images/logos/icon-paddleocr.svg';
+import LogoOpencv from '/public/images/logos/icon-opencv.svg';
+import LogoRos from '/public/images/logos/icon-ros.svg';
+import LogoRosLight from '/public/images/logos/icon-ros-light.svg';
+import LogoGazebo from '/public/images/logos/icon-gazebo.svg';
+import LogoLinux from '/public/images/logos/icon-linux.svg';
+import LogoPostman from '/public/images/logos/icon-postman.svg';
+import LogoN8n from '/public/images/logos/icon-n8n.svg';
+import LogoElevenlabs from '/public/images/logos/icon-elevenlabs.svg';
+import LogoElevenlabsLight from '/public/images/logos/icon-elevenlabs-light.svg';
+import LogoDbeaver from '/public/images/logos/icon-dbeaver.svg';
+import LogoDbeaverLight from '/public/images/logos/icon-dbeaver-light.svg';
 
-import LogoUpwork from '/public/images/logos/logo-upwork.svg';
-import LogoGreenApex from '/public/images/logos/logo-greenapex.svg';
-import LogoGreenApexLight from '/public/images/logos/logo-greenapex-light.svg';
-import LogoDotnpixel from '/public/images/logos/logo-dotnpixel.svg';
-import LogoDotnpixelLight from '/public/images/logos/logo-dotnpixel-light.svg';
-
-import ProjectFiskil from '/public/images/project-fiskil.png';
-import ProjectWingie from '/public/images/project-wingie.png';
-import ProjectPepehousing from '/public/images/project-pepehousing.png';
-
-import AvatarKrisztian from '/public/images/avatar-krisztian.png';
-import AvatarEugen from '/public/images/avatar-eugen.png';
-import AvatarDummy from '/public/images/avatar-dummy.svg';
+import ProjectTriageAiSupport from '/public/images/projects/project-triage-ai-support.png';
+import ProjectTriageTickets from '/public/images/projects/project-triage-tickets.png';
+import ProjectFaradeyProjects from '/public/images/projects/project-faradey-projects.png';
+import ProjectFaradeySales from '/public/images/projects/project-faradey-sales.png';
+import ProjectResmartMedicalStay from '/public/images/projects/project-resmart-medical-stay.png';
+import ProjectResmartDoctors from '/public/images/projects/project-resmart-doctors.png';
+import ProjectOrgsurveyQr from '/public/images/projects/project-orgsurvey-qr.png';
+import ProjectOrgsurveyFeedback from '/public/images/projects/project-orgsurvey-feedback.png';
 
 import {
   ExperienceDetails,
   ProjectDetails,
   TechDetails,
-  TestimonialDetails,
 } from '@/lib/types';
 
 export const EXTERNAL_LINKS = {
@@ -56,12 +55,8 @@ export const NAV_LINKS = [
     href: '#about',
   },
   {
-    label: 'Work',
-    href: '#work',
-  },
-  {
-    label: 'Testimonials',
-    href: '#testimonials',
+    label: 'Projects',
+    href: '#projects',
   },
   {
     label: 'Contact',
@@ -72,15 +67,15 @@ export const NAV_LINKS = [
 export const SOCIAL_LINKS = [
   {
     icon: Github,
-    url: 'https://github.com/shahsagarm',
+    url: 'https://github.com/betulcagril',
   },
   {
-    icon: Twitter,
-    url: 'https://twitter.com/shahsagarm',
+    icon: Linkedin,
+    url: 'https://www.linkedin.com/in/betul-cagril',
   },
   {
-    icon: Figma,
-    url: 'https://www.figma.com/@shahsagarm',
+    icon: Instagram,
+    url: 'https://www.instagram.com/betulcagril',
   },
 ];
 
@@ -106,26 +101,14 @@ export const TECHNOLOGIES: TechDetails[] = [
     url: 'https://nextjs.org/',
   },
   {
+    label: 'Go',
+    logo: LogoGo,
+    url: 'https://go.dev/',
+  },
+  {
     label: 'Node.js',
     logo: LogoNodejs,
     url: 'https://nodejs.org/en',
-  },
-  {
-    label: 'Express.js',
-    logo: LogoExpress,
-    darkModeLogo: LogoExpressLight,
-    url: 'https://expressjs.com/',
-  },
-  {
-    label: 'Nest.js',
-    logo: LogoNest,
-    url: 'https://nestjs.com/',
-  },
-  {
-    label: 'Socket.io',
-    logo: LogoSocket,
-    darkModeLogo: LogoSocketLight,
-    url: 'https://socket.io/',
   },
   {
     label: 'PostgreSQL',
@@ -133,35 +116,68 @@ export const TECHNOLOGIES: TechDetails[] = [
     url: 'https://www.postgresql.org/',
   },
   {
-    label: 'MongoDB',
-    logo: LogoMongoDB,
-    url: 'https://www.mongodb.com/',
-  },
-  {
-    label: 'Sass/Scss',
-    logo: LogoSass,
-    url: 'https://sass-lang.com/',
-  },
-  {
     label: 'Tailwindcss',
     logo: LogoTailwindcss,
     url: 'https://tailwindcss.com/',
   },
   {
-    label: 'Figma',
-    logo: LogoFigma,
-    url: 'https://www.figma.com/',
+    label: 'Python',
+    logo: LogoPython,
+    url: 'https://www.python.org/',
   },
   {
-    label: 'Cypress',
-    logo: LogoCypress,
-    darkModeLogo: LogoCypressLight,
-    url: 'https://www.cypress.io/',
+    label: 'YOLOv8',
+    logo: LogoYolov8,
+    darkModeLogo: LogoYolov8Light,
+    url: 'https://docs.ultralytics.com/',
   },
   {
-    label: 'Storybook',
-    logo: LogoStorybook,
-    url: 'https://storybook.js.org/',
+    label: 'PaddleOCR',
+    logo: LogoPaddleocr,
+    url: 'https://github.com/PaddlePaddle/PaddleOCR',
+  },
+  {
+    label: 'OpenCV',
+    logo: LogoOpencv,
+    url: 'https://opencv.org/',
+  },
+  {
+    label: 'ROS',
+    logo: LogoRos,
+    darkModeLogo: LogoRosLight,
+    url: 'https://www.ros.org/',
+  },
+  {
+    label: 'Gazebo',
+    logo: LogoGazebo,
+    url: 'https://gazebosim.org/',
+  },
+  {
+    label: 'Linux',
+    logo: LogoLinux,
+    url: 'https://www.kernel.org/',
+  },
+  {
+    label: 'Postman',
+    logo: LogoPostman,
+    url: 'https://www.postman.com/',
+  },
+  {
+    label: 'n8n',
+    logo: LogoN8n,
+    url: 'https://n8n.io/',
+  },
+  {
+    label: 'ElevenLabs',
+    logo: LogoElevenlabs,
+    darkModeLogo: LogoElevenlabsLight,
+    url: 'https://elevenlabs.io/',
+  },
+  {
+    label: 'DBeaver',
+    logo: LogoDbeaver,
+    darkModeLogo: LogoDbeaverLight,
+    url: 'https://dbeaver.io/',
   },
   {
     label: 'Git',
@@ -172,120 +188,92 @@ export const TECHNOLOGIES: TechDetails[] = [
 
 export const EXPERIENCES: ExperienceDetails[] = [
   {
-    logo: LogoUpwork,
-    logoAlt: 'Upwork logo',
-    position: 'Independent Freelancer',
-    startDate: new Date(2021, 10),
+    position: 'AI & Full-Stack Intern',
+    company: 'CrewLabs Technology Company',
+    location: 'Remote',
+    websiteUrl: 'https://www.crewlabs.co/tr',
+    websiteLabel: 'crewlabs.co',
+    startDate: new Date(2025, 5),
+    endDate: new Date(2025, 11),
+    summary: [
+      'AI-Powered Voice Assistant: Developed a Go-based microservices architecture integrated with the ElevenLabs AI API and n8n automation platform to process and analyze verbal restaurant orders, enabling automated background actions based on voice data.',
+      'Enterprise Feedback Infrastructure: Built an end-to-end customer survey and analytical feedback system using Next.js 14 (React), TypeScript, Tailwind CSS, and shadcn/ui for the frontend, backed by a scalable PostgreSQL database layer.',
+      'System Integration: Managed REST API integrations and data-driven state flows across the entire platform layer, ensuring seamless communication between AI models and database schemas.',
+      'Key Tech: Go, PostgreSQL, Next.js 14, React, TypeScript, Tailwind CSS, n8n, ElevenLabs API, Postman.',
+    ],
+  },
+  {
+    position: 'Computer Vision Intern',
+    company: 'Fizibil Engineering & Software Company',
+    location: 'On-Site, Ulutek Teknokent',
+    websiteUrl: 'https://www.fizibil.com/',
+    websiteLabel: 'fizibil.com',
+    startDate: new Date(2025, 5),
+    endDate: new Date(2025, 8),
+    summary: [
+      'Automated Meter Reading System: Contributed to the end-to-end development of an applied AI system designed to automatically localize and extract numerical data from physical meter displays.',
+      'Dataset Management: Prepared, curated, and annotated diverse digital datasets using LabelImg to ensure robust inputs for deep learning models.',
+      'Model Training & Extraction: Implemented and fine-tuned object detection frameworks using YOLOv8, and successfully integrated PaddleOCR and OpenCV pipelines for accurate character recognition under varying image qualities.',
+      'Optimization: Conducted epoch-based deep learning model training, tracking key performance metrics to maximize inference speed and recognition accuracy.',
+      'Key Tech: Python, OpenCV, YOLOv8, PaddleOCR, LabelImg, Linux.',
+    ],
+  },
+  {
+    position: 'Software Team Member',
+    company: 'Zafer UAV Team',
+    location: 'Teknofest Competition',
+    websiteUrl: 'https://www.instagram.com/yeditepezaferuavteam/',
+    websiteLabel: 'Instagram · @yeditepezaferuavteam',
+    startDate: new Date(2025, 8),
     currentlyWorkHere: true,
     summary: [
-      'Worked for various clients like Fiskil, Shosho, Crowe MacKay LLP.',
-      'Worked with a variety of technologies, including React, Next.js, Typescript, Express.js, PostgreSQL, Tailwindcss, Mui, Firebase, Storybook, Cypress, and others.',
+      'Autonomous Mission Control: Actively developing autonomous mission scenarios and core navigation algorithms for the Teknofest competition.',
+      'Simulation & Image Processing: Implementing real-time image processing algorithms integrated within Robot Operating System (ROS) and Gazebo simulation environments.',
+      'Agile Collaboration: Contributing to team-based software development pipelines, system configurations, and algorithmic review tracking on Linux environments.',
+      'Key Tech: ROS, Gazebo, Python, OpenCV, Linux, Git.',
     ],
-  },
-  {
-    logo: LogoGreenApex,
-    darkModeLogo: LogoGreenApexLight,
-    logoAlt: 'Greenapex logo',
-    position: 'Team Lead',
-    startDate: new Date(2017, 6),
-    endDate: new Date(2021, 9),
-    summary: [
-      'Acted as team lead in different projects.',
-      'Brainstormed new ideas & gathered requirements for internal projects.',
-      'Designed architecture of different projects (frontend + backend).',
-      'Worked on enterprise-level projects for a variety of clients.',
-      'Handled sprint planning & task distribution.',
-    ],
-  },
-  {
-    logo: LogoDotnpixel,
-    darkModeLogo: LogoDotnpixelLight,
-    logoAlt: 'Dotnpixel logo',
-    position: 'Full Stack Developer',
-    startDate: new Date(2015, 11),
-    endDate: new Date(2017, 4),
-    summary: ['Worked as a full stack developer (React / Laravel).'],
   },
 ];
 
 export const PROJECTS: ProjectDetails[] = [
   {
-    name: 'Wingie',
-    description:
-      'A platform for comparing and finding affordable flights, as well as booking and purchasing tickets safely and easily in a few simple clicks.',
-    url: 'https://www.wingie.com',
-    previewImage: ProjectWingie,
-    technologies: [
-      'React',
-      'Typescript',
-      'React Bootstrap',
-      'Firebase',
-      'Express.js',
-      'PostgreSQL',
-      'Styled Components',
-      'Redux',
+    name: 'Triage – AI-Based Support Ticket Management System',
+    previewImages: [ProjectTriageAiSupport, ProjectTriageTickets],
+    summary: [
+      'Developed Triage, an AI-powered support ticket management system designed to automate internal IT support operations, improve issue resolution efficiency, and provide secure enterprise-grade support workflows through Local LLM integration. The system enables users to submit issues using natural language while AI automatically classifies and prioritizes requests based on urgency.',
+      'Implemented intelligent ticket prioritization, duplicate ticket detection and merging, automatic context capturing including device and network information, SLA performance monitoring, secure local AI processing, and role-based access management for support teams.',
+      'Focused on backend architecture design, API development, AI workflow integration, and building automation pipelines for enterprise IT support operations.',
+      'Key Tech: Python, FastAPI, PostgreSQL, SQLAlchemy, Local LLM, OAuth2, JWT, RBAC, AI Workflow Automation.',
     ],
   },
   {
-    name: 'Fiskil',
-    description:
-      'A platform for accessing real-time open banking and energy data to help you grow your business, backed with scalable back-end infrastructure.',
-    url: 'https://fiskil.com.au',
-    previewImage: ProjectFiskil,
-    technologies: [
-      'React',
-      'Next.js',
-      'Typescript',
-      'Tailwindcss',
-      'Material UI',
-      'Redux Toolkit',
-      'React Query',
-      'Express.js',
-      'PostgreSQL',
-      'Firebase',
-      'AWS Amplify',
-      'Cypress',
-      'Storybook',
+    name: 'Task Management System (Faradey Project)',
+    previewImages: [ProjectFaradeyProjects, ProjectFaradeySales],
+    summary: [
+      'Collaborated in a team to develop Task Management System, a business workflow and internal operations platform designed to help companies manage employee tasks, project execution processes, customer management, sales workflows, and KPI-based performance tracking within a centralized enterprise system.',
+      'The platform included role-based admin management, task creation and assignment workflows, department authorization systems, customer and project lifecycle management, project sub-task automation, internal notification systems, sales pipeline management, KPI definition modules, target tracking dashboards, and performance reporting systems.',
+      'Contributed to backend and frontend development while designing scalable business workflows, implementing complex enterprise logic, and building systems capable of managing cross-department operational processes.',
+      'Key Tech: Go, Next.js, PostgreSQL, REST APIs, Workflow Automation, RBAC, KPI Tracking, System Design.',
     ],
   },
   {
-    name: 'Pepehousing',
-    description:
-      'A platform for renting a flat or room in Poland. You may browse hundreds of verified deals, contact the vendor, and pay online in a simple and secure manner.',
-    url: 'https://pepehousing.com',
-    previewImage: ProjectPepehousing,
-    technologies: [
-      'React',
-      'Next.js',
-      'Typescript',
-      'Tailwindcss',
-      'Redux Toolkit',
-      'React Query',
-      'Storybook',
+    name: 'Re-Smart – Sanatorium & Healthcare Management Platform',
+    previewImages: [ProjectResmartMedicalStay, ProjectResmartDoctors],
+    summary: [
+      'Collaborated in a team to develop Re-Smart, an enterprise healthcare and accommodation management platform designed for sanatorium facilities, integrating patient treatment operations, hotel reservation workflows, accommodation management, and medical service processes within a single scalable system.',
+      'The system included patient management, reservation lifecycle management, room occupancy tracking, doctor and nurse administration, medical treatment scheduling, patient medical records, multilingual support, reporting systems, document management, and integrated workflow automation for healthcare operations.',
+      'Worked on backend and frontend development while implementing scalable APIs, complex business logic, and enterprise workflow automation for healthcare-focused operational management.',
+      'Key Tech: Go, Next.js, PostgreSQL, REST APIs, RBAC, Workflow Automation, Healthcare Systems, System Design.',
     ],
   },
-];
-
-export const TESTIMONIALS: TestimonialDetails[] = [
   {
-    personName: 'Krisztian Gyuris',
-    personAvatar: AvatarKrisztian,
-    title: 'Founder - inboxgenie.io',
-    testimonial:
-      'Job well done! I am really impressed. He is very very good at what he does:) I would recommend Sagar and will rehire in the future for Frontend development.',
-  },
-  {
-    personName: 'Eugen Esanu',
-    personAvatar: AvatarEugen,
-    title: 'Founder - shosho.design',
-    testimonial:
-      'Great guy, highly recommended for any COMPLEX front-end development job! His skills are top-notch and he will be an amazing addition to any team.',
-  },
-  {
-    personName: 'Joe Matkin',
-    personAvatar: AvatarDummy,
-    title: 'Freelancer',
-    testimonial:
-      'Sagar was extremely easy and pleasant to work with and he truly cares about the project being a success. Sagar has a high level of knowledge and was able to work on my MERN stack application without any issues.',
+    name: 'OrganizationSurvey – QR-Based Customer Feedback Platform',
+    previewImages: [ProjectOrgsurveyQr, ProjectOrgsurveyFeedback],
+    summary: [
+      'Developed OrganizationSurvey, a QR-based customer feedback platform designed for hotels and enterprise environments to collect real-time customer satisfaction data through location-specific survey systems. The platform enables organizations to place unique QR codes on kiosk devices, hotel departments, floors, or service areas, allowing customers to instantly access dedicated surveys linked to a specific location.',
+      'The system supports dynamic survey generation, location-based QR assignment, emoji-based feedback collection for quick sentiment analysis, optional text comments for detailed customer reviews, and centralized dashboards for monitoring customer satisfaction across different operational areas. The platform was designed to help organizations identify service quality issues and improve customer experience through structured feedback collection.',
+      'Focused on backend API development, database architecture, QR-based workflow design, and building scalable survey management systems capable of handling location-based feedback collection across large organizations.',
+      'Key Tech: Go, Next.js, PostgreSQL, REST APIs, QR Code Generation, Survey Management Systems, Dashboard Design, System Architecture.',
+    ],
   },
 ];

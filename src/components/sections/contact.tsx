@@ -12,8 +12,8 @@ import Container from '@/components/layout/container';
 import useWindowSize from '@/hooks/use-window-size';
 import { copyTextToClipboard } from '@/lib/utils';
 
-let email = 'reachsagarshah@gmail.com';
-let phone = '+91 8980500565';
+let email = 'betulcagrril@gmail.com';
+let phone = '+90 553 094 1690';
 
 type CopyValue = 'email' | 'phone';
 
@@ -76,7 +76,7 @@ const ContactSection = () => {
             {/* </Link> */}
             <IconButton
               size={width && width < 768 ? 'md' : 'lg'}
-              onClick={() => handleCopyClick(phone.replace(' ', ''), 'phone')}
+              onClick={() => handleCopyClick(phone.replace(/\s/g, ''), 'phone')}
               showTooltip={isCopied && copiedValueType === 'phone'}
               tooltipText="Copied!"
             >

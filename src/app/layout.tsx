@@ -9,22 +9,23 @@ import Footer from '@/components/layout/footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
-const title = 'Sagar Shah | Full Stack Developer From Ahmedabad, India.';
+const title = 'Betül Çağril portfolio';
 const description =
-  'A self-proclaimed designer who specializes in full stack development (React.js & Node.js), from Ahmedabad, India.';
-const url = 'https://sagarshah.dev';
+  'Computer Engineering student portfolio — AI, full-stack development, computer vision, and software projects by Betül Çağril.';
+const url = 'https://betulcagril.dev';
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),
   title,
   description,
   keywords: [
-    'Frontend Developer',
+    'Betül Çağril',
+    'Computer Engineering',
     'Full Stack Developer',
-    'React Developer',
-    'Next.js Developer',
+    'AI Developer',
+    'Portfolio',
   ],
-  creator: 'Sagar Shah',
+  creator: 'Betül Çağril',
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: 'white' },
     { media: '(prefers-color-scheme: dark)', color: 'black' },
@@ -45,7 +46,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title,
     description,
-    creator: '@shahsagarm',
+    creator: '@betulcagril',
     images: '/images/open-graph-sagar.png',
   },
   icons: {
