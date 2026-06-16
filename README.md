@@ -1,34 +1,48 @@
-<h1 align="center">
-  sagarshah.dev
-</h1>
-<p align="center">
-  My portfolio website built with <a href="https://nextjs.org" target="_blank">Next.js</a>, <a href="https://tailwindcss.com" target="_blank">Tailwind CSS</a>, <a href="https://www.radix-ui.com" target="_blank">Radix UI</a> and deployed on <a href="https://www.netlify.com/" target="_blank">Vercel</a>.⚡
-</p>
+# Betül Çağril Portfolio
 
-![preview](https://raw.githubusercontent.com/shahsagarm/sagarshah.dev/main/thumbnail.png)
+Personal portfolio website showcasing my projects, experience, and skills as a Computer Engineering student focused on AI, full-stack development, and computer vision.
+
+**Live site:** [betulcagril.github.io/betulcagril-portfolio](https://betulcagril.github.io/betulcagril-portfolio)
 
 ## Tech Stack
 
-- [Next.js](https://nextjs.org) - React framework for building performant apps with the best developer experience
-- [TypeScript](https://typescriptlang.org) - Static type checker for end-to-end typesafety
-- [Tailwind CSS](https://tailwindcss.com) - Utility-first CSS framework for rapid UI development
-- [Radix UI](https://www.radix-ui.com/) - Primitives like drawer, button, etc. to build a stellar user experience
-- [Lucide Icons](https://lucide.dev) - Beautifully simple, pixel-perfect icons
-- [Next Themes](https://github.com/pacocoursey/next-themes) - An abstraction for themes (Dark + Light Mode).
+- [Next.js 13](https://nextjs.org) — React framework with App Router
+- [TypeScript](https://www.typescriptlang.org/) — Type-safe development
+- [Tailwind CSS](https://tailwindcss.com) — Utility-first styling
+- [Radix UI](https://www.radix-ui.com/) — Accessible UI primitives
+- [Lucide Icons](https://lucide.dev) — Icon set
+- [Next Themes](https://github.com/pacocoursey/next-themes) — Light / dark mode
+
+## Sections
+
+- **Hero** — Introduction and social links
+- **About** — Background and quick facts
+- **Skills** — Technologies and tools
+- **Experience** — Internships and team work
+- **Projects** — Triage, Faradey, Re-Smart, OrganizationSurvey
+- **Contact** — Email, phone, and social media
 
 ## Running Locally
 
 ```bash
-$ git clone https://github.com/shahsagarm/sagarshah.dev.git
-$ cd sagarshah.dev
-$ npm install
-$ npm run dev
+git clone https://github.com/betulcagril/betulcagril-portfolio.git
+cd betulcagril-portfolio
+npm install
+npm run dev
 ```
 
-## Figma
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-If you are looking for a figma file, you can find it **[here](https://www.figma.com/community/file/1262992249991763120/Personal-Portfolio-Website-Template-%7C-Mobile-%26-Desktop)**.
+## Deployment
 
-## License
+This project is configured for **GitHub Pages** via GitHub Actions. Pushing to the `main` branch triggers an automatic build and deploy.
 
-Licensed under the [MIT license](https://github.com/shahsagarm/sagarshah.dev/blob/main/LICENSE).
+In repository settings, set **Pages → Source** to **GitHub Actions**.
+
+## Contact
+
+- **Email:** betulcagrril@gmail.com
+- **Phone:** +90 553 094 1690
+- **GitHub:** [betulcagril](https://github.com/betulcagril)
+- **LinkedIn:** [betul-cagril](https://www.linkedin.com/in/betul-cagril)
+- **Instagram:** [@betulcagril](https://www.instagram.com/betulcagril)
