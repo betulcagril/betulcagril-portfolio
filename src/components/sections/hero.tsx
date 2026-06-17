@@ -14,11 +14,9 @@ const HeroSection = () => {
             Welcome to my portfolio! I&apos;m Betül Çağril ✨
           </Typography>
           <Typography className="text-sm leading-snug md:text-base">
-            As a third-year Computer Engineering student, I truly love the
-            thrill of solving puzzles and building software from scratch. From
-            training smart vision models to designing systems and crafting clean
-            web interfaces, I enjoy every step of the problem-solving journey.
-            For me, engineering is all about curiosity, continuous learning, and
+            I truly love the
+            building software from scratch.From training smart vision models to 
+            designing systems and crafting clean web interfaces,I enjoy every step of the problem solving journey.For me engineering is all about curiosity,continuous learning and
             turning complex ideas into impactful solutions.
           </Typography>
         </div>

@@ -187,7 +187,7 @@ export const TECHNOLOGIES: TechDetails[] = [
 
 export const EXPERIENCES: ExperienceDetails[] = [
   {
-    position: 'AI & Full-Stack Intern',
+    position: 'Full Stack Intern',
     company: 'CrewLabs Technology Company',
     location: 'Remote',
     websiteUrl: 'https://www.crewlabs.co/tr',
@@ -195,10 +195,10 @@ export const EXPERIENCES: ExperienceDetails[] = [
     startDate: new Date(2025, 5),
     endDate: new Date(2025, 11),
     summary: [
-      'AI-Powered Voice Assistant: Developed a Go-based microservices architecture integrated with the ElevenLabs AI API and n8n automation platform to process and analyze verbal restaurant orders, enabling automated background actions based on voice data.',
-      'Enterprise Feedback Infrastructure: Built an end-to-end customer survey and analytical feedback system using Next.js 14 (React), TypeScript, Tailwind CSS, and shadcn/ui for the frontend, backed by a scalable PostgreSQL database layer.',
-      'System Integration: Managed REST API integrations and data-driven state flows across the entire platform layer, ensuring seamless communication between AI models and database schemas.',
-      'Key Tech: Go, PostgreSQL, Next.js 14, React, TypeScript, Tailwind CSS, n8n, ElevenLabs API, Postman.',
+      'AI Powered Voice Assistant:AI-Powered Voice Assistant:Built a Go architecture using ElevenLabs and n8n to analyze spoken user issues.The system automatically identifies the problem,sends it to the right department and runs automated background workflows based on the voice data.',
+      'Enterprise Feedback Infrastructure:Built an customer survey and analytical feedback system using Next.js,TypeScript,Tailwind CSS for the frontend, backed by a scalable PostgreSQL database layer.',
+      'System Integration:Managed REST API integrations and data flows across the platform.This made sure that AI models and databases could communicate and work together smoothly.',
+      'Key Tech:Go,PostgreSQL,Next.js,React,TypeScript,Tailwind CSS,n8n,ElevenLabs API,Postman.',
     ],
   },
   {
@@ -210,11 +210,11 @@ export const EXPERIENCES: ExperienceDetails[] = [
     startDate: new Date(2025, 5),
     endDate: new Date(2025, 8),
     summary: [
-      'Automated Meter Reading System: Contributed to the end-to-end development of an applied AI system designed to automatically localize and extract numerical data from physical meter displays.',
-      'Dataset Management: Prepared, curated, and annotated diverse digital datasets using LabelImg to ensure robust inputs for deep learning models.',
-      'Model Training & Extraction: Implemented and fine-tuned object detection frameworks using YOLOv8, and successfully integrated PaddleOCR and OpenCV pipelines for accurate character recognition under varying image qualities.',
-      'Optimization: Conducted epoch-based deep learning model training, tracking key performance metrics to maximize inference speed and recognition accuracy.',
-      'Key Tech: Python, OpenCV, YOLOv8, PaddleOCR, LabelImg, Linux.',
+      'Automated Meter Reading System:Contributed to the development of an applied AI system designed to automatically localize and extract numerical data from physical meter displays.',
+      'Dataset Management:Gathered and labeled different image datasets using LabelImg to provide high quality data for training deep learning models.',
+      'Model Training & Extraction:Implemented and fine tuned object detection frameworks using YOLOv8 and successfully integrated PaddleOCR and OpenCV pipelines for accurate character recognition under varying image qualities.',
+      'Optimization:Conducted epoch based deep learning model training,tracking key performance metrics to maximize inference speed and recognition accuracy.',
+      'Key Tech:Python,OpenCV,YOLOv8,PaddleOCR,LabelImg,Linux.',
     ],
   },
   {
@@ -226,53 +226,53 @@ export const EXPERIENCES: ExperienceDetails[] = [
     startDate: new Date(2025, 8),
     currentlyWorkHere: true,
     summary: [
-      'Autonomous Mission Control: Actively developing autonomous mission scenarios and core navigation algorithms for the Teknofest competition.',
-      'Simulation & Image Processing: Implementing real-time image processing algorithms integrated within Robot Operating System (ROS) and Gazebo simulation environments.',
-      'Agile Collaboration: Contributing to team-based software development pipelines, system configurations, and algorithmic review tracking on Linux environments.',
-      'Key Tech: ROS, Gazebo, Python, OpenCV, Linux, Git.',
+      'Autonomous Mission Control:Developing autonomous flight scenarios and core navigation algorithms for a International Unmanned Aerial Vehicle Competition in Teknofest.',
+      'Simulation & Image Processing:Implementing real time image processing algorithms integrated within ROS and Gazebo simulation environments.',
+      'Team Collaboration:Working in a team to build software pipelines,configure systems and review code in Linux environments.',
+      'Key Tech:ROS,Gazebo,Python,OpenCV,Linux,Git.',
     ],
   },
 ];
 
 export const PROJECTS: ProjectDetails[] = [
   {
-    name: 'Triage – AI-Based Support Ticket Management System',
+    name: 'Triage – AI Based Support Ticket Management System',
     previewImages: [ProjectTriageAiSupport, ProjectTriageTickets],
     summary: [
-      'Developed Triage, an AI-powered support ticket management system designed to automate internal IT support operations, improve issue resolution efficiency, and provide secure enterprise-grade support workflows through Local LLM integration. The system enables users to submit issues using natural language while AI automatically classifies and prioritizes requests based on urgency.',
-      'Implemented intelligent ticket prioritization, duplicate ticket detection and merging, automatic context capturing including device and network information, SLA performance monitoring, secure local AI processing, and role-based access management for support teams.',
-      'Focused on backend architecture design, API development, AI workflow integration, and building automation pipelines for enterprise IT support operations.',
-      'Key Tech: Python, FastAPI, PostgreSQL, SQLAlchemy, Local LLM, OAuth2, JWT, RBAC, AI Workflow Automation.',
+      'Developed Triage an AI powered support ticket management system designed to automate internal IT support operations,improve issue resolution efficiency and provide secure enterprise grade support workflows through Local LLM integration.The system enables users to submit issues using natural language while AI automatically classifies and prioritizes requests based on urgency.',
+      'Implemented intelligent ticket prioritization,duplicate ticket detection and merging,automatic context capturing including device and network information,SLA performance monitoring,secure local AI processing and role based access management for support teams.',
+      'Focused on backend architecture design,API development,AI workflow integration and building automation pipelines for enterprise IT support operations.',
+      'Key Tech:Python,FastAPI,PostgreSQL,SQLAlchemy,Local LLM,JWT.',
     ],
   },
   {
-    name: 'Task Management System (Faradey Project)',
+    name: 'Task Management System',
     previewImages: [ProjectFaradeyProjects, ProjectFaradeySales],
     summary: [
-      'Collaborated in a team to develop Task Management System, a business workflow and internal operations platform designed to help companies manage employee tasks, project execution processes, customer management, sales workflows, and KPI-based performance tracking within a centralized enterprise system.',
-      'The platform included role-based admin management, task creation and assignment workflows, department authorization systems, customer and project lifecycle management, project sub-task automation, internal notification systems, sales pipeline management, KPI definition modules, target tracking dashboards, and performance reporting systems.',
-      'Contributed to backend and frontend development while designing scalable business workflows, implementing complex enterprise logic, and building systems capable of managing cross-department operational processes.',
-      'Key Tech: Go, Next.js, PostgreSQL, REST APIs, Workflow Automation, RBAC, KPI Tracking, System Design.',
+      'Collaborated in a team to develop Task Management System a business workflow and internal operations platform designed to help companies manage employee tasks,project execution processes,customer management,sales workflows and KPI based performance tracking within a centralized enterprise system.',
+      'The platform included role based admin management,task creation and assignment workflows,department authorization systems,customer and project lifecycle management,project sub task automation,internal notification systems,sales pipeline management,KPI definition modules,target tracking dashboards and performance reporting systems.',
+      'Contributed to both backend and frontend development while designing flexible business workflows.I built systems that handle complex project logic and help manage daily operations across different departments.',
+      'Key Tech:Go,Next.js,PostgreSQL,REST APIs,KPI Tracking,System Design.',
     ],
   },
   {
     name: 'Re-Smart – Sanatorium & Healthcare Management Platform',
     previewImages: [ProjectResmartMedicalStay, ProjectResmartDoctors],
     summary: [
-      'Collaborated in a team to develop Re-Smart, an enterprise healthcare and accommodation management platform designed for sanatorium facilities, integrating patient treatment operations, hotel reservation workflows, accommodation management, and medical service processes within a single scalable system.',
-      'The system included patient management, reservation lifecycle management, room occupancy tracking, doctor and nurse administration, medical treatment scheduling, patient medical records, multilingual support, reporting systems, document management, and integrated workflow automation for healthcare operations.',
-      'Worked on backend and frontend development while implementing scalable APIs, complex business logic, and enterprise workflow automation for healthcare-focused operational management.',
-      'Key Tech: Go, Next.js, PostgreSQL, REST APIs, RBAC, Workflow Automation, Healthcare Systems, System Design.',
+      'Collaborated in a team to develop Re-Smart an enterprise healthcare and accommodation management platform designed for sanatorium facilities,integrating patient treatment operations,hotel reservation workflows,accommodation management and medical service processes within a single scalable system.',
+      'The system included patient management,reservation lifecycle management,room occupancy tracking,doctor and nurse administration,medical treatment scheduling,patient medical records,multilingual support,reporting systems,document management and integrated workflow automation for healthcare operations.',
+      'Worked on backend and frontend development while implementing APIs,complex business logic and enterprise workflow automation for healthcare focused operational management.',
+      'Key Tech:Go,Next.js,PostgreSQL,REST APIs,System Design.',
     ],
   },
   {
-    name: 'OrganizationSurvey – QR-Based Customer Feedback Platform',
+    name: 'OrganizationSurvey – QR Based Customer Feedback Platform',
     previewImages: [ProjectOrgsurveyQr, ProjectOrgsurveyFeedback],
     summary: [
-      'Developed OrganizationSurvey, a QR-based customer feedback platform designed for hotels and enterprise environments to collect real-time customer satisfaction data through location-specific survey systems. The platform enables organizations to place unique QR codes on kiosk devices, hotel departments, floors, or service areas, allowing customers to instantly access dedicated surveys linked to a specific location.',
-      'The system supports dynamic survey generation, location-based QR assignment, emoji-based feedback collection for quick sentiment analysis, optional text comments for detailed customer reviews, and centralized dashboards for monitoring customer satisfaction across different operational areas. The platform was designed to help organizations identify service quality issues and improve customer experience through structured feedback collection.',
-      'Focused on backend API development, database architecture, QR-based workflow design, and building scalable survey management systems capable of handling location-based feedback collection across large organizations.',
-      'Key Tech: Go, Next.js, PostgreSQL, REST APIs, QR Code Generation, Survey Management Systems, Dashboard Design, System Architecture.',
+      'Developed OrganizationSurvey,a QR based customer feedback platform designed for hotels and enterprise environments to collect real time customer satisfaction data through location specific survey systems.The platform enables organizations to place unique QR codes on kiosk devices,hotel departments,floors or service areas allowing customers to instantly access dedicated surveys linked to a specific location.',
+      'The system supports dynamic survey generation,location based QR assignment,emoji based feedback collection for quick customer satisfaction analysis,optional text comments for detailed customer reviews and centralized dashboards for monitoring customer satisfaction across different operational areas.The platform was designed to help organizations identify service quality issues and improve customer experience through structured feedback collection.',
+      'Focused on backend API development,database architecture and building efficient survey management system capable of handling location based feedback collection across large organizations.',
+      'Key Tech:Go,Next.js,PostgreSQL,REST APIs,Dashboard Design,System Architecture.',
     ],
   },
 ];

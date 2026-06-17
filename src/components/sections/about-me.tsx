@@ -30,45 +30,40 @@ const AboutMeSection = () => {
         <div className="flex max-w-xl flex-col gap-6">
           <Typography variant="h3">I&apos;m</Typography>
           <Typography>
-            A third-year Computer Engineering student at Yeditepe University.
-            Rather than limiting myself to a single domain in software
-            engineering, I focus on building end-to-end solutions ranging from
-            database optimization and modern web architectures to scalable AI
-            integrations and low-level computer vision pipelines.
+          Third year Computer Engineering student at Yeditepe University. 
+          Rather than limiting myself to one software domain,I develop various solutions 
+          including database optimization,modern web architectures,adaptable AI integrations.
           </Typography>
           <Typography>
-            Through my corporate internship experiences, I have gained hands-on
-            expertise in developing robust backend systems with Go and
-            PostgreSQL, crafting highly performant user interfaces using Next.js
-            14 and TypeScript, and implementing deep learning-based object
-            detection models with YOLOv8 / PaddleOCR. Additionally, as a member
-            of a software team working with autonomous systems in ROS and Gazebo
-            environments, I actively leverage the power of collaboration to
-            tackle complex, high-stakes engineering challenges.
+          Through my corporate internships,I have gained practical experience building 
+          backend systems with Go and PostgreSQL and creating fast user interfaces using 
+          Next.js and TypeScript.I also work with deep learning models like YOLOv8 and 
+          PaddleOCR for object detection.Additionally as part of a software team working 
+          on autonomous systems in ROS and Gazebo,I enjoy collaborating with others to 
+          solve complex engineering problems
           </Typography>
           <Typography>
-            Transforming intricate business logic into clean, modular, and
-            maintainable code—while architecting systems that solve real-world
-            problems—is what drives my passion. Guided by engineering rationale,
-            I believe there is no problem that cannot be optimized, and I am
-            committed to continuous learning and technical excellence.
+          My passion is turning complex business needs into clean,organized
+          and easy to maintain code while building systems that solve real world problems. 
+          With a strong engineering mindset I believe that any system can be improved and 
+          optimized.I am always committed to continuous learning and building impactful projects.
           </Typography>
-          <Typography>Finally, some quick bits about me.</Typography>
+          <Typography>Snapshots:</Typography>
           <div className="flex flex-col gap-2 md:flex-row md:gap-6">
-            <ul className="flex list-inside list-disc flex-col gap-2">
+            <ul className="list-disc space-y-2 pl-5">
               <Typography component="li">
                 B.E. in Computer Engineering — Yeditepe University
               </Typography>
               <Typography component="li">
-                Backend: Go, PostgreSQL
+                Backend:Go,PostgreSQL
               </Typography>
             </ul>
-            <ul className="flex list-inside list-disc flex-col gap-2">
+            <ul className="list-disc space-y-2 pl-5">
               <Typography component="li">
-                Frontend: Next.js 14, TypeScript
+                Frontend:Next.js,TypeScript
               </Typography>
               <Typography component="li">
-                AI & Robotics: YOLOv8, PaddleOCR, ROS, Gazebo
+                AI & Robotics:YOLOv8,PaddleOCR,ROS,Gazebo
               </Typography>
             </ul>
           </div>
