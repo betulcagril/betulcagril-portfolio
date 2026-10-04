@@ -22,14 +22,14 @@ const ExperienceDetails = ({
   summary,
 }: ExperienceDetailsProps) => {
   return (
-    <Card className="mx-auto flex w-full max-w-4xl flex-col justify-between gap-4 p-8 md:flex-row md:gap-8">
-      <div className="flex flex-col gap-4 max-md:order-3 md:w-3/4">
+    <Card className="mx-auto flex w-full max-w-4xl min-w-0 flex-col justify-between gap-4 overflow-hidden p-4 sm:p-8 md:flex-row md:gap-8">
+      <div className="flex min-w-0 flex-1 flex-col gap-4 max-md:order-3 md:w-3/4">
         <div className="flex flex-col gap-2">
           <Typography variant="subtitle" className="font-semibold text-gray-900">
             {position}
           </Typography>
           {(company || location) && (
-            <Typography className="text-gray-600">
+            <Typography className="break-words text-gray-600">
               {[company, location].filter(Boolean).join(' · ')}
             </Typography>
           )}
@@ -45,15 +45,19 @@ const ExperienceDetails = ({
             </Link>
           )}
         </div>
-        <ul className="flex list-disc flex-col gap-2 md:gap-1">
+        <ul className="list-disc space-y-2 pl-5 md:space-y-1">
           {summary?.map((sentence, index) => (
-            <Typography component="li" key={index}>
+            <Typography
+              component="li"
+              key={index}
+              className="break-words [overflow-wrap:anywhere]"
+            >
               {sentence}
             </Typography>
           ))}
         </ul>
       </div>
-      <div className="max-md:order-2 md:w-1/4">
+      <div className="max-md:order-2 md:w-1/4 md:shrink-0">
         <Typography className="text-gray-700 md:text-right">
           {new Intl.DateTimeFormat('en-US', dateFormatOptions).format(
             startDate
