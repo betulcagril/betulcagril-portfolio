@@ -1,15 +1,14 @@
 'use client';
 
 import Button from '@/components/general/button';
-import { withBasePath } from '@/lib/site-config';
-
-export const CV_FILENAME = 'Betul-Cagril-CV.pdf';
-const cvHref = withBasePath(`/files/${CV_FILENAME}`);
+import { CV_FILENAME, CV_PUBLIC_PATH, getPublicFileUrl } from '@/lib/site-config';
 
 const DownloadCV = () => {
+  const cvUrl = getPublicFileUrl(CV_PUBLIC_PATH);
+
   return (
     <Button asChild>
-      <a href={cvHref} download={CV_FILENAME}>
+      <a href={cvUrl} download={CV_FILENAME}>
         Download CV
       </a>
     </Button>
