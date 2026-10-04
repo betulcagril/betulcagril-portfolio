@@ -3,12 +3,15 @@
 import Button from '@/components/general/button';
 import { withBasePath } from '@/lib/site-config';
 
+export const CV_FILENAME = 'Betul-Cagril-CV.pdf';
+const cvHref = withBasePath(`/files/${CV_FILENAME}`);
+
 const DownloadCV = () => {
   return (
-    <Button
-      onClick={() => window?.open(withBasePath('/files/betulcagrilCV.pdf'), '_blank')}
-    >
-      Download CV
+    <Button asChild>
+      <a href={cvHref} download={CV_FILENAME}>
+        Download CV
+      </a>
     </Button>
   );
 };
