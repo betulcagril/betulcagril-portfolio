@@ -6,7 +6,7 @@ import { withBasePath } from '@/lib/site-config';
 const DownloadCV = () => {
   return (
     <Button
-      onClick={() => window?.open(withBasePath('/files/betul-cagril-cv.pdf'), '_blank')}
+      onClick={() => window?.open(withBasePath('/files/betulcagrilCV.pdf'), '_blank')}
     >
       Download CV
     </Button>

@@ -30,7 +30,7 @@ const AboutMeSection = () => {
         <div className="flex max-w-xl flex-col gap-6">
           <Typography variant="h3">I&apos;m</Typography>
           <Typography>
-          Third year Computer Engineering student at Yeditepe University. 
+          Final year Computer Engineering student at Yeditepe University. 
           Rather than limiting myself to one software domain,I develop various solutions 
           including database optimization,modern web architectures,adaptable AI integrations.
           </Typography>

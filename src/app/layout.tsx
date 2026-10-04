@@ -86,7 +86,9 @@ export default function RootLayout({
       <body className={`${inter.className} bg-gray text-gray-600 antialiased`}>
         <Providers>
           <Header />
-          <main className="flex min-h-screen w-full flex-col">{children}</main>
+          <main className="flex min-h-screen w-full max-w-[100vw] flex-col overflow-x-hidden">
+            {children}
+          </main>
           <Footer />
         </Providers>
       </body>

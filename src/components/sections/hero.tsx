@@ -14,10 +14,9 @@ const HeroSection = () => {
             Welcome to my portfolio! I&apos;m Betül Çağril ✨
           </Typography>
           <Typography className="text-sm leading-snug md:text-base">
-            I truly love the
-            building software from scratch.From training smart vision models to 
-            designing systems and crafting clean web interfaces,I enjoy every step of the problem solving journey.For me engineering is all about curiosity,continuous learning and
-            turning complex ideas into impactful solutions.
+            I build full stack applications and vision models. I enjoy handling the
+            entire development process from system architecture to user facing features
+            with a focus on code quality.
           </Typography>
         </div>
         <div className="flex flex-col gap-1.5 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-4 sm:gap-y-1">

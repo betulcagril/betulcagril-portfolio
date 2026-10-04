@@ -16,7 +16,7 @@ const SkillsSection = () => {
         </Typography>
       </div>
 
-      <div className="grid grid-cols-3 gap-y-4 md:grid-cols-6 md:gap-y-8 lg:grid-cols-8 lg:gap-y-12">
+      <div className="grid w-full max-w-full grid-cols-2 justify-items-center gap-x-3 gap-y-6 sm:grid-cols-3 md:grid-cols-6 md:gap-x-4 md:gap-y-8 lg:grid-cols-8 lg:gap-y-12">
         {TECHNOLOGIES.map((technology, index) => (
           <TechDetails {...technology} key={index} />
         ))}
