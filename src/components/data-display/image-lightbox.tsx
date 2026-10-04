@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import Image, { StaticImageData } from 'next/image';
 import * as Dialog from '@radix-ui/react-dialog';
 import { X } from 'lucide-react';
@@ -15,17 +16,18 @@ type ImageLightboxProps = {
 
 const getImageDimensions = (src: string | StaticImageData) => {
   if (typeof src === 'string') {
-    return { width: 1920, height: 1080 };
+    return { width: 1280, height: 720 };
   }
 
   return { width: src.width, height: src.height };
 };
 
 const ImageLightbox = ({ src, alt, className }: ImageLightboxProps) => {
+  const [open, setOpen] = useState(false);
   const { width, height } = getImageDimensions(src);
 
   return (
-    <Dialog.Root>
+    <Dialog.Root open={open} onOpenChange={setOpen}>
       <Dialog.Trigger asChild>
         <button
           type="button"
@@ -40,7 +42,8 @@ const ImageLightbox = ({ src, alt, className }: ImageLightboxProps) => {
             alt={alt}
             width={width}
             height={height}
-            quality={100}
+            loading="lazy"
+            decoding="async"
             sizes="(max-width: 768px) 100vw, 50vw"
             className="h-auto w-full"
             style={{ objectFit: 'contain' }}
@@ -60,17 +63,17 @@ const ImageLightbox = ({ src, alt, className }: ImageLightboxProps) => {
                 <X />
               </IconButton>
             </Dialog.Close>
-            <Image
-              src={src}
-              alt={alt}
-              width={width}
-              height={height}
-              quality={100}
-              unoptimized
-              sizes="96vw"
-              className="h-auto max-h-[90vh] w-full"
-              style={{ objectFit: 'contain' }}
-            />
+            {open ? (
+              <Image
+                src={src}
+                alt={alt}
+                width={width}
+                height={height}
+                sizes="96vw"
+                className="h-auto max-h-[90vh] w-full"
+                style={{ objectFit: 'contain' }}
+              />
+            ) : null}
           </div>
           <Dialog.Title className="sr-only">{alt}</Dialog.Title>
         </Dialog.Content>

@@ -25,14 +25,14 @@ import LogoElevenlabsLight from '/public/images/logos/icon-elevenlabs-light.svg'
 import LogoDbeaver from '/public/images/logos/icon-dbeaver.svg';
 import LogoDbeaverLight from '/public/images/logos/icon-dbeaver-light.svg';
 
-import ProjectTriageAiSupport from '/public/images/projects/project-triage-ai-support.png';
-import ProjectTriageTickets from '/public/images/projects/project-triage-tickets.png';
-import ProjectFaradeyProjects from '/public/images/projects/project-faradey-projects.png';
-import ProjectFaradeySales from '/public/images/projects/project-faradey-sales.png';
-import ProjectResmartMedicalStay from '/public/images/projects/project-resmart-medical-stay.png';
-import ProjectResmartDoctors from '/public/images/projects/project-resmart-doctors.png';
-import ProjectOrgsurveyQr from '/public/images/projects/project-orgsurvey-qr.png';
-import ProjectOrgsurveyFeedback from '/public/images/projects/project-orgsurvey-feedback.png';
+import ProjectTriageAiSupport from '/public/images/projects/project-triage-ai-support.webp';
+import ProjectTriageTickets from '/public/images/projects/project-triage-tickets.webp';
+import ProjectFaradeyProjects from '/public/images/projects/project-faradey-projects.webp';
+import ProjectFaradeySales from '/public/images/projects/project-faradey-sales.webp';
+import ProjectResmartMedicalStay from '/public/images/projects/project-resmart-medical-stay.webp';
+import ProjectResmartDoctors from '/public/images/projects/project-resmart-doctors.webp';
+import ProjectOrgsurveyQr from '/public/images/projects/project-orgsurvey-qr.webp';
+import ProjectOrgsurveyFeedback from '/public/images/projects/project-orgsurvey-feedback.webp';
 
 import {
   ExperienceDetails,

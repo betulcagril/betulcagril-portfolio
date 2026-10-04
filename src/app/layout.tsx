@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     siteName: title,
     images: [
       {
-        url: '/images/betul-about.png',
+        url: '/images/betul-about.webp',
       },
     ],
   },
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title,
     description,
     creator: '@betulcagril',
-    images: '/images/betul-about.png',
+    images: '/images/betul-about.webp',
   },
   icons: {
     icon: withBasePath('/favicon.ico'),
